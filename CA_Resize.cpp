@@ -26,9 +26,11 @@ int main(int argc, char* argv[]){
 	// Check for proper syntax
 
 	if (argc < 2){
-		cout << endl << "Syntax Error - Incorrect Parameter Usage:" << endl << endl;
-		cout << "program_name input_image.raw mask.raw [Image Width] [Image Height] [Image Depth] [shrink/stretch]" << endl << endl;
-		cout << "Default: [Image Width = 256] [Image Height = 256] [Image Depth = 1]"<< endl;
+        printf( "Syntax Error - Incorrect Parameter usage:\r\n\r\n" );
+        printf( "%s input.raw mask.raw <width> <height> <depth> <shrink/stretch>"
+                "\r\n\r\n", argv[0] );
+        printf( "Default: <width = 256> <height = 256> <depth = 1>\r\n");
+
 		return 0;
 	}
 

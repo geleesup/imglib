@@ -1,6 +1,6 @@
 caResize: CA_Resize.cpp Shrink.cpp oldStretch \
 energyMap.cpp kminSeam.cpp mat2im.cpp minSeam.cpp minSeam2.cpp
-	g++ CA_Resize.cpp Shrink.cpp stretch.o \
+	g++ -O3 CA_Resize.cpp Shrink.cpp stretch.o \
     energyMap.cpp kminSeam.cpp mat2im.cpp minSeam.cpp minSeam2.cpp \
     imglib/obj/*.o -idirafter imglib/include -L/usr/local/lib -o caResize
 

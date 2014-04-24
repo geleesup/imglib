@@ -12,6 +12,7 @@ class Image
     	int median(int filterArray[5]);
     
     public:
+
     	Image( int width,
                int height,
                int depth );	    	
