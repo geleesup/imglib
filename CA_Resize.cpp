@@ -17,6 +17,8 @@ extern Image mat2im(Matrix toConvert);
 extern Matrix minSeamV(Matrix Energy);
 extern Image shrink(Image inputImage, Matrix mask, int numPixels);
 extern Image stretch(Image inputImage, Matrix mask, int numPixels);
+extern Image stretchV(Image inputImage, Matrix mask, int numPixels);
+
 
 int main(int argc, char* argv[]){
 
